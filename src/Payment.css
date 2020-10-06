@@ -1,0 +1,40 @@
+.payment__section {
+  display: flex;
+  margin: 0 2px;
+  padding: 20px;
+  background-color: white;
+  color: black;
+  border-bottom: 1px solid lightgrey;
+}
+
+/* ? this is actually taking 2% of the width */
+.payment__title {
+  flex: 0.2;
+}
+
+/* ? and this 8% */
+.payment__address,
+.payment__items,
+.payment__details {
+  flex: 0.8;
+}
+
+.payment__details > form {
+  max-width: 400px;
+}
+
+.payment__details > h3 {
+  padding-bottom: 20px;
+}
+
+.payment__details > form > div > button {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  font-weight: bolder;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+}

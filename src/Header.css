@@ -1,0 +1,81 @@
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  width: 100px;
+  /* this object-fit makes the image fit cleaner and aspect ratio is good */
+  object-fit: contain;
+  margin: 0 10px;
+}
+
+.header__search {
+  display: flex;
+  /* * the flex to 1 determines that the element can go as long as it can */
+  flex: 2 !important;
+  align-items: center;
+}
+
+.header__searchInput {
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.header__searchIcon {
+  padding: 2px;
+  height: 30px !important;
+  background-color: #ffbb62;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.header__nav {
+  display: flex;
+  /* flex: 1; */
+  justify-content: space-evenly;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__optionLineOne {
+  color: rgb(194, 194, 194);
+  font-size: 12px;
+}
+
+.header__optionLineTwo {
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.header__cart {
+  display: flex;
+  align-items: center;
+  flex: 0.2;
+  justify-content: space-evenly;
+}
+
+.header__cartIcon {
+  padding: 1px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.header__cartCount {
+  font-weight: bolder;
+  font-size: 20px;
+  margin-left: 8px;
+  cursor: pointer;
+}
